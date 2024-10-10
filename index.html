@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Management</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <div>
+        <!-- Existing Create Event button -->
+        <a href="{{ url_for('create_event') }}" class="btn btn-primary">Create Event</a>
+    
+        <!-- New Upload CSV button -->
+        <a href="{{ url_for('upload_csv') }}" class="btn btn-secondary">Upload CSV</a>
+    </div>
+    
+    <ul>
+        {% for event in events %}
+        <li>
+            <a href="{{ url_for('event_details', event_id=event[0]) }}">{{ event[1] }}</a>
+            ({{ event[3] }})
+            <a href="{{ url_for('update_event', event_id=event[0]) }}" class="btn btn-primary">Update</a>
+            <form method="POST" action="{{ url_for('delete_event', event_id=event[0]) }}">
+                <button type="submit">Delete</button>
+            </form>            
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

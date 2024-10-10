@@ -1,0 +1,18 @@
+<form method="POST">
+    <label>Title:</label>
+    <input type="text" name="title" value="{{ event[1] }}" required><br>
+    
+    <label>Description:</label>
+    <textarea name="description"  required>{{ event[2] }}</textarea><br>
+    
+    <label>Date:</label>
+    <input type="date" name="date" value="{{ event[3] }}" required><br>
+    
+    <label>Location:</label>
+    <input type="text" name="location" value="{{ event[4] }}" required><br>
+    
+    <label>Capacity:</label>
+    <input type="number" name="capacity" value="{{ event[5] }}" required><br>
+    
+    <button type="submit">Update Event</button>
+</form>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ event[1] }} - Details</title>
+</head>
+<body>
+    <h1>{{ event[1] }}</h1>
+    <p>{{ event[2] }}</p>
+    <p>Date: {{ event[3] }}</p>
+    <p>Location: {{ event[4] }}</p>
+    <h2>Attendees</h2>
+    <ul>
+        {% for attendee in attendees %}
+        <li>{{ attendee[1] }} ({{ attendee[2] }})</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('ticket_sales_report') }}" class="btn btn-info">View Ticket Sales Report</a>
+    <h3>Register Attendee</h3>
+    <form method="POST">
+        <label>Name:</label><input type="text" name="name" required><br>
+        <label>Email:</label><input type="email" name="email" required><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ticket Sales Report</title>
+</head>
+<body>
+    <h1>Ticket Sales Report</h1>
+    <table border="1">
+        <tr>
+            <th>Event Title</th>
+            <th>Capacity</th>
+            <th>Tickets Sold</th>
+            <th>Revenue ($)</th>
+        </tr>
+        {% for row in report_data %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
