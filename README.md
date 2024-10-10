@@ -32,15 +32,15 @@ Database: SQLite, CSV
 Frontend: HTML, CSS (for templating), Bootstrap
 Other Tools: Jinja2 (for templating with Flask)
 
-**How It Works :**:
+**How It Works :**
 
 
 Home Page:
 
 
-Lists all the events.
-You can view event details and manage them (edit or delete).
-Create New Event:
++ Lists all the events.
++ You can view event details and manage them (edit or delete).
++ Create New Event:
 
 Add a new event with fields such as title, description, date, location, and capacity.
 Event Details:
