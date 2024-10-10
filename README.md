@@ -49,3 +49,11 @@ View the event information.
 Register new attendees for the event and see the list of registered attendees.
 
 **Required libraries are mentioned in the required.txt**
+
+
+**Running the Application**
+
+
++ Ensure the requirements are installed
++ Start the Flask development server:  **python app.py**
++ Open your browser and navigate to: **http://localhost:5000**
