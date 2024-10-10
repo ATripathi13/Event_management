@@ -24,7 +24,7 @@ A Python-based web application designed for event planners to manage events, att
 ![ticket_sale_report](https://github.com/user-attachments/assets/5105383b-3bf4-441b-a67a-4b1b26402331)
 
 
-**Tech Stack**
+**Tech Stack :**
 
 
 Backend: Flask (Python)
@@ -32,7 +32,7 @@ Database: SQLite, CSV
 Frontend: HTML, CSS (for templating), Bootstrap
 Other Tools: Jinja2 (for templating with Flask)
 
-**How It Works**:
+**How It Works :**:
 
 
 Home Page:
@@ -51,7 +51,7 @@ Register new attendees for the event and see the list of registered attendees.
 **Required libraries are mentioned in the required.txt**
 
 
-**Running the Application**
+**Running the Application :**
 
 
 + Ensure the requirements are installed
